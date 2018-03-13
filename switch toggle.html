@@ -3,76 +3,15 @@
 <head>
 	<title>Motion | switch</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<style type="text/css">
-	/*bootstrap cdn*/
-		.container{
-			width:500px;
-			margin: 0 auto;
-		}
-		.switch
-		{
-			width: 200px;
-			height: 100px;
-			background-color: #E5E5E5;
-			z-index: 0;
-			margin: 0;
-			padding: 0;
-			appearance:none;
-			border: none;
-			cursor: pointer;
-			position: relative;
-			border-radius: 100px; 
-		}
-		.switch:before{
-			content:  ' ';
-			position: absolute;
-			left: 5px;
-			right: 5px;
-			width: 190px;
-			height: 90px;
-			background-color: white;
-			z-index: 1;
-			border-radius: 95px;
+	
+	<!-- bootstrap cdn -->
+		<link rel="stylesheet" type="text/css" href="switch.css">
 
-
-		}
-		.switch:after
-		{
-			content: ' ';
-			width: 88px;
-			height: 88px;
-			border-radius: 86px;
-			z-index: 2;
-			background-color: white;
-			position: absolute;
-			transition-duration: 500ms;
-			left: 6px;
-			right: 6px;
-			box-shadow: 0 2px 5px #999999;
-
-		}
-		.switchOn, .switchOn:before{
-			background:#4cd964; !important;
-
-		}
-		.switchOn:after
-		{
-			left: 105px;
-		}
-	</style>
 	<script
 	          src="https://code.jquery.com/jquery-3.3.1.min.js"
 			  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
 			  crossorigin="anonymous"></script>
-	<script>
-		$(document).ready(function(){
-			$('.switch').click(function(){
-				$(this).toggleClass("switchOn");
-
-			});
-		});
-		// jquery
-	</script>
+<script type="text/javascript" src="switch.js"></script>
 </head>
 <body>
 	<!-- .container begins -->
